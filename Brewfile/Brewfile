@@ -1,0 +1,92 @@
+## where to install homebrew-cask applications
+cask_args appdir: '/Applications'
+
+# set-up brew with taps
+
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "mas-cli/tap"
+tap "thoughtbot/formulae"
+
+# Brew
+
+brew "openssl@1.1"
+brew "readline"
+brew "sqlite"
+brew "python"
+brew "asciinema"
+brew "autoconf"
+brew "automake"
+brew "cask"
+brew "coreutils"
+brew "ecm"
+brew "exiftool"
+brew "ghostscript"
+brew "git"
+brew "git-flow-avh"
+brew "gnuplot"
+brew "libtool"
+brew "graphviz"
+brew "hivemind"
+brew "htop"
+brew "hub"
+brew "imagemagick"
+brew "jemalloc"
+brew "libksba"
+brew "postgresql", restart_service: true
+brew "libpqxx"
+brew "libyaml"
+brew "macvim", link: false
+brew "nmap"
+brew "nvm"
+brew "ocaml"
+brew "opam"
+brew "pkg-config"
+brew "redis"
+brew "tree"
+brew "upx"
+brew "yarn"
+brew "zsh-syntax-highlighting"
+brew "heroku/brew/heroku"
+brew "mas-cli/tap/mas"
+brew "thoughtbot/formulae/parity"
+
+# MAS - comes before 'cask' so a MAS version of an app takes precendence
+
+mas "Be Focused", id: 973134470
+mas "com.agilebits.onepassword-osx", id: 443987910
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Simple Recorder", id: 989175722
+mas "The Unarchiver", id: 425424353
+mas "ChatMate for WhatsApp", id: 1228059008
+mas "Xcode", id: 497799835
+
+# cask applications
+
+cask "agenda"
+cask "alfred"
+cask "aware"
+cask "bettertouchtool"
+cask "calibre"
+cask "chromedriver"
+cask "dash"
+cask "flux"
+cask "google-backup-and-sync"
+cask "gpg-suite"
+cask "java"
+cask "keycastr"
+cask "macs-fan-control"
+cask "muzzle"
+cask "postman"
+cask "slack"
+cask "stremio"
+cask "shiftit"
+cask "tor-browser"
+cask "transmission"
+cask "vlc"
